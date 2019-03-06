@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url, include
+from blogproject.feeds import AllPostsRssFeed
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'', include("blogproject.urls")),
     url(r'', include("comments.urls")),
+    url(r'^all/rss/$', AllPostsRssFeed(), name='rss'),
+    url(r'search/', include('haystack.urls')),
 ]

@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-n^!voky&ifs^q@f^$px)i3+^z_9v_o!s%0+tyeq88o_xm3p@$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.ymwhweb.com']
-
+ALLOWED_HOSTS = []
+# '127.0.0.1', 'localhost ', '.ymwhweb.com'
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogproject',
     'comments',
+    'haystack',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static').replace('\\', '/'),
 # )
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'blogproject.whoosh_cn_backends.WhooshEngine',
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    },
+}
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 10
+# 添加此项，当数据库改变时，会自动更新索引，非常方便
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

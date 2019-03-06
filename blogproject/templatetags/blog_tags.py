@@ -1,5 +1,5 @@
 # 自定义标签，simple_tag在django1.9版本后才支持
-from ..models import Post, Category
+from ..models import Post, Category, Tag
 from django import template
 
 register = template.Library()
@@ -20,3 +20,8 @@ def archives():
 @register.simple_tag()
 def get_categories():
     return Category.objects.all()
+
+# 首页自定义获取全部标签
+@register.simple_tag()
+def get_tags():
+    return Tag.objects.all()
