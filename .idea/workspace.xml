@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2f92e40-daf2-4977-bd37-9eed65545eb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/templatetags/blog_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/templatetags/blog_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myfirstpython3blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstpython3blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myfirstpython3blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstpython3blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/full-width.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/full-width.html" afterDir="false" />
-    </list>
+    <list default="true" id="d2f92e40-daf2-4977-bd37-9eed65545eb1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
