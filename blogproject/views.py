@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post, Category, Tag
+from Course.models import Course_Post
 from comments.forms import Commetforms
 import markdown
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.db.models import Q
+import time
+# from django.db.models import Q
 # Create your views here.
 
 # 首页
@@ -17,6 +19,7 @@ def index(request):
     contacts, page_object = paging(request, post_list)
     post_list = contacts.object_list
     tags_str = -1
+    newYear = time.strftime('%Y',time.localtime(time.time()))
     return render(request, "blog/index.html", locals())
 
 # 关于
@@ -37,6 +40,7 @@ def full_width(request):
 # 详情页
 def detail(request, pk):
     tags_str = request.path.find('post')
+    # coursePost = get_object_or_404(Course_Post, pk=course_pk)
     post = get_object_or_404(Post, pk=pk)
     post.increase_views()
     post_tags = Tag.objects.filter(post=post)

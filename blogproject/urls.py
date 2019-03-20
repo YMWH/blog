@@ -3,8 +3,7 @@ from . import views
 
 app_name = 'blogproject'
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^index/$', views.index, name = 'index'),
+    url(r'^blog/$', views.index, name = 'blog'),
     url(r'^about/$', views.about, name = 'about'),
     url(r'^contact/$', views.contact, name = 'contact'),
     url(r'^full_width/$', views.full_width, name = 'full_width'),

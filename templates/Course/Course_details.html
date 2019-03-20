@@ -1,0 +1,401 @@
+{% extends CourseRoot %}
+{% load course_tags %}
+<!-- Slider -->
+{% block silder %}
+{% endblock %}
+<!-- / Slider -->
+
+<!-- Content -->
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs column">
+        <p><a href="{% url 'Course:index' %}">index</a>   \\   <a href="{% url 'Course:StartPage' 1 %}">{{ post_value.course }}</a>   \\ {{ post_value.name }}</p>
+    </div>
+{% endblock %}
+
+<!-- Main Content -->
+<div class="main-content">
+
+    <!-- Single -->
+    <div class="column-two-third single">
+        <!-- Popular News -->
+        {% block Popular %}
+        {% endblock %}
+        <!-- /Popular News -->
+
+        <!-- Hot News -->
+        {% block Hot %}
+        {% endblock %}
+        <!-- /Hot News -->
+
+        <!-- Life Style -->
+        {% block Life %}
+        {% endblock %}
+        <!-- /Life Style -->
+
+        <!-- World News -->
+        {% block World %}
+        {% endblock %}
+        <!-- /World News -->
+
+        <!-- Popular News -->
+        {% block PopularNews %}
+        {% endblock %}
+        <!-- /Popular News -->
+        <!--
+        <div class="flexslider">
+           <ul class="slides">
+                <li>
+                    <img src="img/flexslider/1.png" alt="MyPassion" />
+                </li>
+                <li>
+                    <img src="img/flexslider/3.png" alt="MyPassion" />
+                </li>
+                <li>
+                    <img src="img/flexslider/5.png" alt="MyPassion" />
+                </li>
+            </ul>
+        </div>
+        -->
+        {% block TutorialContent %}
+            <h5 class="title">{{ post_value.name }}</h5>
+            <span class="meta">{{ post_value.modified_time }}</span>
+            <p>{{ post.body|safe }}</p>
+            <p class="chapterP">
+                {% if chapterUp != 0 %}
+                    <a href="{% url 'Course:CourseDetails' chapterUp %}" class="chapter chapterUp">上一页</a>
+                {% endif %}
+                {% if chapterDown != 0 %}
+                    <a href="{% url 'Course:CourseDetails' chapterDown %}" class="chapter chapterDown">下一页</a>
+                {% endif %}
+            </p>
+        {% endblock %}
+
+        {% block CommentArea %}
+            <div class="comments discuss">
+                <h5 class="line"><span>大家说</span></h5>
+                <ul class = "commentsUl">
+                    {% for commentData in commentAllData %}
+                    <li>
+                        <div>
+                            <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                            <div class="commment-text-wrap">
+                                <div class="comment-data">
+                                    <p><a href="#" class="url">{{ commentData.users }}</a> <br /> <span>{{ commentData.created_time }} - <a href="#" class="comment-reply-link">回复</a></span></p>
+                                </div>
+                                <div class="comment-text">{{ commentData.text }}</div>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                    <!--
+                    <li>
+                        <div>
+                            <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                            <div class="commment-text-wrap">
+                                <div class="comment-data">
+                                    <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                </div>
+                                <div class="comment-text">Curabitur nunc mauris, <a href="#">link test</a> id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                            </div>
+
+                        </div>
+                        <ul class="children">
+                            <li>
+                                <div>
+                                    <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                    <div class="commment-text-wrap">
+                                        <div class="comment-data">
+                                            <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                        </div>
+                                        <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                    </div>
+                                </div>
+
+                                <ul class="children">
+                                    <li>
+                                        <div>
+                                            <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                            <div class="commment-text-wrap">
+                                                <div class="comment-data">
+                                                    <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                                </div>
+                                                <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                            </div>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div>
+                                                    <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                                    <div class="commment-text-wrap">
+                                                        <div class="comment-data">
+                                                            <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                                        </div>
+                                                        <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="children">
+                                                    <li>
+                                                        <div>
+                                                            <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                                            <div class="commment-text-wrap">
+                                                                <div class="comment-data">
+                                                                    <p>MyPassion <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                                                </div>
+                                                                <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <ul class="children">
+                                                            <li>
+                                                                <div>
+                                                                    <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                                                    <div class="commment-text-wrap">
+                                                                        <div class="comment-data">
+                                                                            <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                                                        </div>
+                                                                        <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+
+                                <ul class="children">
+                                    <li>
+                                        <div>
+                                            <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                            <div class="commment-text-wrap">
+                                                <div class="comment-data">
+                                                    <p><a href="#" class="url">MyPassion </a><br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                                </div>
+                                                <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                        <ul class="children">
+                            <li>
+                                <div>
+                                    <div class="comment-avatar"><img src="img/avatar.png" alt="MyPassion" /></div>
+                                    <div class="commment-text-wrap">
+                                        <div class="comment-data">
+                                            <p><a href="#" class="url">MyPassion</a> <br /> <span>January 12, 2013 - <a href="#" class="comment-reply-link">reply</a></span></p>
+                                        </div>
+                                        <div class="comment-text">Curabitur nunc mauris, imperdiet id dictum quis, aliquet vel diam. Aliquam gravida, augue et dictum hendrerit, nisl erat congue elit, et molestie magna sapien cursus tortor.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <div class="loginPrompt">
+                <h5 class="line"><span>大家说</span></h5>
+                <p><span>亲爱的，你还没有登录哦，请登录后评论   ➡_➡   </span></p>
+            </div>
+        {% endblock %}
+
+        {% block Comment %}
+            <div class="comment-form discuss">
+                <h5 class="line"><span>大声说出你想说的，听不听是我的事</span></h5>
+                <form action="" method="post">
+                    <!--
+                    <div class="form">
+                        <label>Name*</label>
+                        <div class="input">
+                            <input type="text" class="name" />
+
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label>Email*</label>
+                        <div class="input">
+                            <input type="text" class="name" />
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label>Website</label>
+                        <div class="input">
+                            <input type="text" class="name" />
+                        </div>
+                    </div>
+                    -->
+                    <div class="form">
+                        <label>你说我听</label>
+                        <textarea rows="10" cols="20" class="commentText"></textarea>
+                    </div>
+                    <input type="submit" class="post-comment" value="发表" onclick="return usercCriticism()"/>
+                </form>
+            </div>
+        {% endblock %}
+    </div>
+    <!-- /Single -->
+
+</div>
+<!-- /Main Content -->
+
+<!-- Left Sidebar -->
+<div class="column-one-third">
+    {% block Catalog %}
+        <div class="sidebar">
+            <h5 class="line"><span>{{ post_value.course }}教程</span></h5>
+            <ul>
+                {% ifequal state 1 %}
+                    {% for value in post_list %}
+                        <li class="catalog">
+                            <a href="{% url 'Course:CourseDetails' value.id %}">{{ value.name }}</a>
+                            {% ifequal post.id value.id %}
+                                {{ post.toc|safe }}
+                            {% endifequal %}
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    {% for value in post_list %}
+                        <li class="catalog">
+                            <a href="{% url 'Course:CourseDetails' value.id %}">{{ value.name }}</a>
+                        </li>
+                    {% endfor %}
+                {% endifequal %}
+            </ul>
+        </div>
+    {% endblock %}
+
+    {% block Information %}
+        <div class="sidebar">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs1">最近</a></li>
+                    <li><a href="#tabs2">评论</a></li>
+                </ul>
+                <div id="tabs1">
+                    {% get_recent_posts as postTitle %}
+                    <ul>
+                        {% for titleValue in postTitle %}
+                            <li>
+                                <a href="{% url 'Course:CourseDetails' titleValue.id %}" class="title">{{ titleValue.name }}</a>
+                                <span class="meta">{{ titleValue.create_time }}   \\   <a href="{% url 'Course:StartPage' titleValue.course_id %}">{{ titleValue.course }}</a>   \\  {{ titleValue.name }}</span>
+                                <!--
+                                    <span class="rating"><span style="width:80%;"></span></span>
+                                -->
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div id="tabs2">
+                    <ul>
+                        <li>
+                            <a href="#" class="title"><strong>Someone:</strong> eleifend est et turpis. Duis id erat.Mauris eleifend est et turpis. Duis id erat.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block social %}
+        <div class="sidebar">
+            <h5 class="line"><span>联系方式</span></h5>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook"><i class="icon-facebook"></i></a>
+                    <span>6,800 <br/> <i>fans</i></span>
+                </li>
+                <li>
+                    <a href="#" class="twitter"><i class="icon-twitter"></i></a>
+                    <span>12,475 <br/> <i>followers</i></span>
+                </li>
+                <li>
+                    <a href="#" class="rss"><i class="icon-rss"></i></a>
+                    <span><i>Subscribe via rss</i></span>
+                </li>
+            </ul>
+        </div>
+    {% endblock %}
+
+    {% block video %}
+    {% endblock %}
+
+    {% block Spot1 %}
+    {% endblock %}
+
+    {% block Accordion %}
+    {% endblock %}
+
+    {% block Spot2 %}
+    {% endblock %}
+
+    {% block facebook %}
+    {% endblock %}
+
+                    <!--
+
+                    <div class="sidebar">
+                    	<h5 class="line"><span>Ads Spot.</span></h5>
+                        <ul class="ads125">
+                        	<li><a href="#"><img src="img/banner/3.png" alt="MyPassion" /></a></li>
+                            <li><a href="#"><img src="img/banner/1.png" alt="MyPassion" /></a></li>
+                            <li><a href="#"><img src="img/banner/2.png" alt="MyPassion" /></a></li>
+                            <li><a href="#"><img src="img/banner/4.png" alt="MyPassion" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar">
+                    	<h5 class="line"><span>Accordion.</span></h5>
+                        <div id="accordion">
+
+                            <h3>Poserue Clubre.</h3>
+                            <div>
+                                <p>Vestibulum tempor feugiat est in posuere. Sed auctor libero augue, a faucibus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices. posuere.</p>
+                            </div>
+
+                            <h3>Lubelia Mest.</h3>
+                            <div>
+                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                            </div>
+
+                            <h3>Tincidunt Massa.</h3>
+                            <div>
+                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac liberoac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+                            </div>
+
+                            <h3>Quisque lobortis.</h3>
+                            <div>
+                                <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netuset malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                    	<h5 class="line"><span>Ads Spot.</span></h5>
+                        <a href="#"><img src="img/tf_300x250_v1.gif" alt="MyPassion" /></a>
+                    </div>
+
+                    <div class="sidebar">
+                    	<h5 class="line"><span>Facebook.</span></h5>
+                        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;width=298&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color=%23BCBCBC&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:298px; height:258px;" allowTransparency="true"></iframe>
+                    </div>
+
+                    <div class="sidebar">
+                    	<h5 class="line"><span>Vimeo Video.</span></h5>
+                        <iframe src="http://player.vimeo.com/video/65110834?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="300px" height="170px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                    -->
+</div>
+<!-- /Left Sidebar -->
+
+<!-- / Content -->

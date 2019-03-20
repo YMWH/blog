@@ -20,51 +20,41 @@
         </div>
     </article>
     <section class="comment-area" id="comment-area">
-                    <hr>
-                    <h3>发表评论</h3>
-                    <form action="{% url 'comments:comments' post.pk %}" method="post" class="comment-form">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label for="id_name">名字：</label>
-                                {{ form.name }}
-                                {{ form.name.error }}
-                            </div>
-                            <div class="col-md-4">
-                                <label for="id_email">邮箱：</label>
-                                {{ form.email }}
-                                {{ form.email.error }}
-                            </div>
-                            <div class="col-md-4">
-                                <label for="id_url">网址：</label>
-                                {{ form.url }}
-                                {{ form.url.error }}
-                            </div>
-                            <div class="col-md-12">
-                                <label for="id_comment">评论：</label>
-                                {{ form.text }}
-                                {{ form.text.error }}
-                                <button type="submit" class="comment-btn">发表</button>
-                            </div>
-                        </div>    <!-- row -->
-                    </form>
-                    <div class="comment-list-panel">
-                        <h3>评论列表，共 <span>{{ comment_list|length }}</span> 条评论</h3>
-                        <ul class="comment-list list-unstyled">
-                            {% for comment in comment_list %}
-                                <li class="comment-item">
-                                    <span class="nickname">{{ comment.name }}</span>
-                                    <time class="submit-date">{{ comment.created_time }}</time>
-                                    <div class="text">
-                                        {{ comment.text }}
-                                    </div>
-                                </li>
-                            {% empty %}
-                                暂无评论
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </section>
+        <hr>
+        <h3>发表评论</h3>
+        <div class="loginPrompt">
+            <p><span>亲爱的，你还没有登录哦，请登录后评论   ➡_➡   </span><a href="#" id="login">登录</a></p>
+        </div>
+        <div class="discuss">
+            <form action="{% url 'comments:post' post.pk %}" method="post" class="comment-form">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="id_comment">评论：</label>
+                    {{ form.text }}
+                    {{ form.text.error }}
+                    <button type="submit" class="comment-btn">发表</button>
+                </div>
+            </div>    <!-- row -->
+        </form>
+            <div class="comment-list-panel">
+            <h3>评论列表，共 <span>{{ comment_list|length }}</span> 条评论</h3>
+            <ul class="comment-list list-unstyled">
+                {% for comment in comment_list %}
+                    <li class="comment-item">
+                        <span class="nickname">{{ comment.name }}</span>
+                        <time class="submit-date">{{ comment.created_time }}</time>
+                        <div class="text">
+                            {{ comment.text }}
+                        </div>
+                    </li>
+                {% empty %}
+                    暂无评论
+                {% endfor %}
+            </ul>
+        </div>
+        </div>
+    </section>
 {% endblock %}
 
 {% block Catalog %}

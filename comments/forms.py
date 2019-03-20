@@ -5,4 +5,4 @@ class Commetforms(forms.ModelForm):
     # 元类
     class Meta:
         model = Comment
-        fields = ["name", "email", "url", "text"]
+        fields = ["text"]

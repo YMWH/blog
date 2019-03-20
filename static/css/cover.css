@@ -1,0 +1,43 @@
+.cover{
+    display:none;
+}
+.coverOut{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.3);
+    z-index: 999;
+    display:block;
+}
+.cover .loginFrom{
+    width:500px;
+    background:rgba(255, 215, 0, .5);
+    position:fixed;
+    top:40%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-150px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(136, 136, 136, .7);
+    z-index: 999;
+}
+.cover .loginFrom .exit{
+    position:absolute;
+    right:0;
+    top:0;
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    font-size:15px;
+    font-weight: bold;
+    background:rgba(255, 0, 0, .3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.cover .loginFrom .exit:hover{
+    background:rgba(255, 0, 0, .6);
+}

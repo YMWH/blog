@@ -1,0 +1,7 @@
+body .registerForm .Form .tips{
+    padding:0;
+}
+body .Form{
+    line-height: 20px;
+    font-size: 14px;
+}

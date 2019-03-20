@@ -1,0 +1,21 @@
+.chapterP{
+    height:30px;
+    position: relative;
+}
+.chapter{
+    color: #ffffff;
+    font-size:20px;
+    position: absolute;
+    transition: all 1s;
+}
+.chapterUp{
+    left:0;
+}
+.chapterDown{
+    right:0;
+}
+.chapter:hover{
+    color: red;
+    font-size:22px;
+    text-decoration: none;
+}

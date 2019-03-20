@@ -1,0 +1,93 @@
+#login{
+    position: absolute;
+    right:0;
+}
+#login a{
+    display:inline-block;
+}
+.formCenter{
+    width:300px;
+    margin:60px auto;
+}
+.formCenter span{
+    color:#9854E6;
+    display: inline-block;
+    width:80px;
+}
+.Form{
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+
+}
+.formAll{
+    text-align: center;
+}
+.formAll>a{
+    margin-right: 20px;
+}
+.formAll>button{
+    transition: all 1s;
+}
+.formAll>button:hover{
+    color:#F8FF00;
+    background: #1394EA;
+}
+.formAll .switch{
+    cursor: pointer;
+    color: #0A1DF7;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.formAll .switch:hover{
+    color: red;
+    background:#0AB0F7;
+    border-radius: 10px;
+}
+.registerForm{
+    display: none;
+}
+.register{
+    margin-top:10px;
+}
+.Form span{
+    font-weight: bold;
+    text-align:right;
+}
+.registerForm .Form .tips{
+    width:320px;
+    color:red;
+    padding:40px 0;
+}
+.discuss{
+    display: none;
+}
+.loginPrompt p{
+    color:red;
+    font-size:14px;
+    font-weight: bold;
+}
+.loginPrompt p a#login{
+    color:#9449DE;
+    font-size:20px;
+    font-weight: bold;
+    transition: all 1s;
+    right:50%;
+    bottom:5px;
+}
+.loginPrompt p a#login:hover{
+    font-size:24px;
+    color:#05FF00;
+}
+.loginForm .cue{
+    display: block;
+    height: 40px;
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+}

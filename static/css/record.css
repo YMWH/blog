@@ -1,0 +1,15 @@
+#record{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    position:absolute;
+    bottom: -250px;
+    right:0;
+}
+#record1{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    position:absolute;
+    left:515px;
+}

@@ -1,0 +1,32 @@
+.catalog{
+    padding:0 20px;
+    list-style:none;
+    transition: all 0.3s;
+    margin:5px 0;
+}
+.catalog a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    height:30px;
+    line-height:30px;
+}
+.catalog a:hover{
+    text-decoration: none;
+    background:rgba(2, 177, 253, .5);
+    color:#FFF800;
+}
+.toc li{
+    list-style: none;
+}
+.toc a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 1s;
+    padding-left:15px;
+}
+.toc a:hover{
+    color:rgb(0,0,0);
+    text-decoration: none;
+    background:rgb(255,255,255);
+}
