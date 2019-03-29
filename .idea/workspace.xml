@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f92e40-daf2-4977-bd37-9eed65545eb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myfirstpython3blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfirstpython3blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course/static/img/flexslider/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Course/static/img/flexslider/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/migrations/0002_commentusers_lasttime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/migrations/0003_commentusers_userip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myfirstpython3blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstpython3blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myfirstpython3blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstpython3blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Verification/verification.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Verification/verification.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/criticism.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/criticism.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Course/Course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Course/Course_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courseBase.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courseBase.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +78,15 @@
     <session id="-513012749">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="4" />
-          <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -112,7 +94,7 @@
           <entry key="css" value="2929" />
           <entry key="html" value="4460" />
           <entry key="js" value="5461" />
-          <entry key="py" value="9864" />
+          <entry key="py" value="9962" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -120,7 +102,7 @@
           <entry key="CSS" value="2929" />
           <entry key="HTML" value="4460" />
           <entry key="JavaScript" value="5461" />
-          <entry key="Python" value="9864" />
+          <entry key="Python" value="9962" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -131,7 +113,7 @@
           <entry key="js" value="44" />
           <entry key="php" value="1" />
           <entry key="png" value="4" />
-          <entry key="py" value="314" />
+          <entry key="py" value="321" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="2" />
         </counts>
@@ -143,7 +125,7 @@
           <entry key="Image" value="5" />
           <entry key="JavaScript" value="44" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="314" />
+          <entry key="Python" value="321" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -152,34 +134,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Course/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1553852076312" expanded="true" signature="918:919" ph="..." />
-                <marker date="1553852076312" expanded="true" signature="1040:1041" ph="..." />
-                <marker date="1553852076312" expanded="true" signature="1040:1045" ph="..." />
-                <marker date="1553852076312" expanded="true" signature="1603:1608" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comments/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="4710">
               <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#userCancel#0" />
@@ -190,13 +147,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fabfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-415">
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/virtual/Lib/site-packages/fabric/operations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-179">
+              <caret line="969" column="4" selection-start-line="969" selection-start-column="4" selection-end-line="969" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/virtual/Lib/site-packages/invoke/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2880">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myfirstpython3blog/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comments/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="3330">
               <caret line="145" column="72" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="72" />
               <folding>
                 <element signature="e#2823#3989#0" />
-                <element signature="e#6393#7573#0" />
               </folding>
             </state>
           </provider>
@@ -205,7 +197,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="4440">
               <caret line="148" column="78" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="78" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
@@ -219,7 +211,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="3750">
               <caret line="125" column="46" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="46" />
               <folding>
                 <element signature="e#7726#9933#0#HTML" />
@@ -231,7 +223,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="270">
               <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
@@ -240,7 +232,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Course/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="270">
               <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -304,7 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Course/migrations/urls.py" />
         <option value="$PROJECT_DIR$/static/css/logo.css" />
         <option value="$PROJECT_DIR$/static/js/copyright.js" />
         <option value="$PROJECT_DIR$/static/css/record.css" />
@@ -340,7 +331,6 @@
         <option value="$PROJECT_DIR$/comments/urls.py" />
         <option value="$PROJECT_DIR$/verification/Verification.py" />
         <option value="$PROJECT_DIR$/static/js/criticism.js" />
-        <option value="$PROJECT_DIR$/myfirstpython3blog/settings.py" />
         <option value="$PROJECT_DIR$/static/js/xxxxx.js" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/img/views.py" />
@@ -355,6 +345,8 @@
         <option value="$PROJECT_DIR$/templates/courseBase.html" />
         <option value="$PROJECT_DIR$/Course/views.py" />
         <option value="$PROJECT_DIR$/comments/views.py" />
+        <option value="$PROJECT_DIR$/fabfile.py" />
+        <option value="$PROJECT_DIR$/myfirstpython3blog/settings.py" />
       </list>
     </option>
   </component>
@@ -386,29 +378,7 @@
             <path>
               <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
-              <item name="comments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -616,7 +586,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7877907" visible="true" weight="0.18189168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7877907" visible="true" weight="0.19159256" />
       <window_info id="Structure" order="1" sideWeight="0.2122093" side_tool="true" weight="0.18189168" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -630,7 +600,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.46085408" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31850535" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32740214" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1245,22 +1215,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/Course/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/templatetags/course_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/view.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/communication/CLIENT1/Verification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1397,9 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,16 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#14#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
@@ -1441,16 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Course/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1462,9 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,9 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="13" lean-forward="true" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1496,9 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,9 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1519,9 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,46 +1451,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="46" />
-          <folding>
-            <element signature="e#7726#9933#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="148" column="78" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="78" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Course/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        <state relative-caret-position="960">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1553852076312" expanded="true" signature="918:919" ph="..." />
@@ -1585,25 +1465,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments/views.py">
+    <entry file="file://E:/python3Blog/Lib/site-packages/invoke/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="145" column="72" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="72" />
-          <folding>
-            <element signature="e#2823#3989#0" />
-            <element signature="e#6393#7573#0" />
-          </folding>
+        <state relative-caret-position="-1575">
+          <caret line="257" column="4" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="4710">
           <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
           <folding>
             <element signature="n#!!block;n#userCancel#0" />
             <element signature="n#!!block;n#submitregister#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/virtual/Lib/site-packages/invoke/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="145" column="72" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="72" />
+          <folding>
+            <element signature="e#2823#3989#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="148" column="78" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="78" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3750">
+          <caret line="125" column="46" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="46" />
+          <folding>
+            <element signature="e#7726#9933#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/virtual/Lib/site-packages/fabric/operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="969" column="4" selection-start-line="969" selection-start-column="4" selection-end-line="969" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
