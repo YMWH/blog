@@ -4,6 +4,7 @@ cffi==1.12.2
 cryptography==2.6.1
 Django==1.10.6
 django-haystack==2.8.1
+Fabric3==1.14.post1
 invoke==1.2.0
 jieba==0.39
 Markdown==3.0.1
