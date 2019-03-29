@@ -14,7 +14,7 @@ function usercCriticism() {
     //下面两行相当于协议包
     xmlhttp.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest'); //ajax
     xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-    data = "catalog=" + text.value;
+    data = "csrfmiddlewaretoken"+document.getElementsByName("csrfmiddlewaretoken")[0].value + "&catalog=" + text.value;
     xmlhttp.send(data);
     text.value = '';
     return false;

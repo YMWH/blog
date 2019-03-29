@@ -19,14 +19,20 @@ var offLine = document.querySelector('.offLine');
 var onLine = document.querySelector('.onLine');
 var loginA = login.querySelector('a');
 var cancel = login.querySelector('.cancel');
+var overplusDate = document.querySelector('.overplus');
+var verificationText = document.querySelector('.verificationCode');
 var route = '/comments/login/';
+var date = 0;
+var newDate = new Date();
+var verifyCode = '';
+
+
 
 if(loginA === onLine){
     funLogin()
 }else if(loginA === offLine){
     funCancel()
 }
-
 
 loginExit.onclick = function(){
     register_Form.style.display = "none";
@@ -37,6 +43,7 @@ go_register.onclick = function () {
     login_Form.style.display = "none";
     register_Form.style.display = "block";
     route = '/comments/register/';
+    verifyCode = new GVerify("verification_img");
 };
 back_login.onclick = function () {
     register_Form.style.display = "none";
@@ -46,7 +53,6 @@ back_login.onclick = function () {
 
 login.onclick = function (e) {
     e = e || event;
-    console.log(e.target);
     if(e.target.className === "offLine"){
         loginBox.className += ' coverOut';
     }else if(e.target.className === "cancel"){
@@ -60,17 +66,6 @@ login.onclick = function (e) {
         }
     }
 };
-
-// try{
-//     offLine.onclick = function(){
-//         loginBox.className += ' coverOut';
-//     };
-// }catch (e) {
-//     cancel.onclick = function(){
-//         userCancel()
-//     };
-// }
-
 
 function funCancel() {
     try{
@@ -132,6 +127,7 @@ function userCancel(nodeFirst, i) {
     //下面两行相当于协议包
     xmlhttp.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest'); //ajax
     xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.setRequestHeader( 'X-CSRFToken',document.getElementsByName("csrfmiddlewaretoken")[0].value);
     var userName = nodeFirst[i].innerHTML;
     if(!userName){
         userName = nodeFirst[i+1].innerHTML;
@@ -141,6 +137,72 @@ function userCancel(nodeFirst, i) {
 
     return false;
 }
+
+function submitregister() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function () {
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            var respone = eval('(' + xmlhttp.responseText + ')');
+
+            var reglogin = /register/;
+            if(reglogin.test(respone[0])){
+                switch (respone[1]) {
+                    case 0:
+                        overplusDate.innerHTML = "账号已经存在，请重新注册";
+                        break;
+                    case -1:
+                        switch (respone[2]) {
+                            case 0:
+                                overplusDate.innerHTML = "该邮箱已经注册过，请用其他邮箱注册";
+                                break;
+                        }
+                        break;
+                    case 1:
+                        overplusDate.innerHTML = "可喜可贺可喜可贺，不用当哑巴了！";
+                        setTimeout(auto, 3000);
+                        function auto() {
+                            register_Form.style.display = "none";
+                            login_Form.style.display = "block";
+                            route = '/comments/login/';
+                            registerName.innerHTML = "";
+                            registerPwd.innerHTML = "";
+                            userAginPwd.innerHTML = "";
+                            userMail.innerHTML = "";
+                            verificationText.innerHTML = "";
+                            overplusDate.innerHTML = "";
+                        }
+                        break;
+                }
+            }
+        }
+    };
+    xmlhttp.open('POST', route, true);  //相当于connect
+    //下面两行相当于协议包
+    xmlhttp.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest'); //ajax
+    xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.setRequestHeader( 'X-CSRFToken',document.getElementsByName("csrfmiddlewaretoken")[0].value);
+
+    var regRoute = /register/;
+    if(regRoute.test(route)){
+        var res = verifyCode.validate(verificationText.value);
+        if(res){
+            overplusDate.innerHTML = "";
+            if ((registerPwd.value === userAginPwd.value) && checking()){
+                userTips.innerHTML = '';
+                data = "csrfmiddlewaretoken"+document.getElementsByName("csrfmiddlewaretoken")[0].value + "&userName=" + registerName.value + "&password=" + registerPwd.value + "&mailbox=" + userMail.value;
+                xmlhttp.send(data);
+            }else{
+                userTips.innerHTML = '第一次输入的密码和第二次输入的密码不相等';
+            }
+        }else{
+            overplusDate.innerHTML = '验证码错误';
+        }
+    }
+    return false;
+}
+
+
+
 
 function submitlogin() {
     var xmlhttp = new XMLHttpRequest();
@@ -161,20 +223,30 @@ function submitlogin() {
                         userCue.innerHTML = "你已经在线了啊，还登录干嘛？要上天还是咋滴？";
                         break;
                     case 1:
-                        userCue.innerHTML = "告诉你一个好消息，登录成功了，你可以为所欲为啦⬅_⬅";
                         setTimeout(auto, 3000);
-                        function auto() {
-                            register_Form.style.display = "none";
-                            login_Form.style.display = "block";
-                            loginBox.className = 'cover';
-                            hideDiscuss.style.display = "none";
-                            loginName.value = "";
-                            loginPwd.value = "";
-                            userCue.innerHTML = "";
-                            for(var i = 0; i < Discuss.length; i++){
-                                Discuss[i].style.display = "block"
+                        var reg = /login=True/;
+                        if(reg.test(document.cookie) && respone[2]){
+                            userCue.innerHTML = "告诉你一个好消息，登录成功了，你可以为所欲为啦⬅_⬅";
+                            setTimeout(auto, 3000);
+                            function auto() {
+                                register_Form.style.display = "none";
+                                login_Form.style.display = "block";
+                                loginBox.className = 'cover';
+                                loginName.value = "";
+                                loginPwd.value = "";
+                                userCue.innerHTML = "";
+                                try{
+                                    hideDiscuss.style.display = "none";
+                                    for(var i = 0; i < Discuss.length; i++){
+                                        Discuss[i].style.display = "block"
+                                    }
+                                }catch (e) {
+                                    console.log("欢迎来到影梦无痕的个人网站")
+                                }
+                                finally {
+                                    login.innerHTML = '<a href="#" class="onLine">' + respone[3] + '</a> <a href="#" class="cancel">注销</a>';
+                                }
                             }
-                            login.innerHTML = '<a href="#" class="onLine">' + respone[3] + '</a> <a href="#" class="cancel">注销</a>';
                         }
                         break;
                 }
@@ -185,42 +257,12 @@ function submitlogin() {
     //下面两行相当于协议包
     xmlhttp.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest'); //ajax
     xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.setRequestHeader( 'X-CSRFToken',document.getElementsByName("csrfmiddlewaretoken")[0].value);
 
     var regRoute = /login/;
     if(regRoute.test(route) && checking()){
-        data = "userName="+loginName.value+"&"+"password="+loginPwd.value;
+        data = "userName="+loginName.value + "&" + "password="+loginPwd.value;
         xmlhttp.send(data);
-    }
-    return false;
-}
-
-function submitregister() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function () {
-        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-            // var redata = JSON.parse(xmlhttp.responseText);
-            var respone = eval('(' + xmlhttp.responseText + ')');
-            console.log(respone);
-            console.log(respone[0]);
-            console.log(typeof(respone));
-        }
-    };
-    xmlhttp.open('POST', route, true);  //相当于connect
-    //下面两行相当于协议包
-    xmlhttp.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest'); //ajax
-    xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-
-
-    var regRoute = /register/;
-    if(regRoute.test(route)){
-        console.log(checking());
-        if ((registerPwd.value === userAginPwd.value) && checking()){
-            userTips.innerHTML = '';
-            data = "userName=" + registerName.value + "&" + "password=" + registerPwd.value + "&" + "mailbox=" + userMail.value;
-            xmlhttp.send(data);
-        }else{
-            userTips.innerHTML = '第一次输入的密码和第二次输入的密码不相等';
-        }
     }
     return false;
 }

@@ -13,7 +13,7 @@
 <meta name="author" content="MyPassion">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>影梦无痕</title>
-<link rel="shortcut icon" href="{% static 'ico/ico.png' %}" />
+<link rel="shortcut icon" href="{% static ico.address %}" />
 
 <!-- STYLES -->
 <link rel="stylesheet" href="{% static 'css/chapter.css' %}">
@@ -48,6 +48,7 @@
             <span class="exit">X</span>
             <div class="formCenter">
                 <form>
+                    {% csrf_token %}
                     <div class="loginForm formAll">
                         <h2>登录</h2>
                         <p class="Form">
@@ -81,12 +82,11 @@
                         <p class="Form">
                             <span>邮箱：</span><input type="text" name="mailbox" minlength="3" required="" id="mailbox">
                         </p>
-                        <!--
-                        <p class="Form">
-                            <span>验证码：</span><input type="text" name="mailbox" minlength="3" required="" id="mailbox">
-                            <span class="Verification "></span>
-                        </p>
-                        -->
+                        <div class="verification overFloat"  onclick="Code()">
+                            <input type="text" class="verificationCode">
+                            <div id = "verification_img"></div>
+                            <p class = "overplus"></p>
+                        </div>
                         <span class="back switch">返回登录</span>
                         <button type="submit" onclick="return submitregister()" class="formButton">注册</button>
                     </div>
@@ -103,17 +103,8 @@
             <div class="container">
                 <div class="column">
                     <div class="logo">
-                        <a href="{% url 'Course:index' %}"><img src="{% static 'logo/logo1.png' %}" alt="logo" id = 'logo1_img' /></a>
+                        <a href="{% url 'Course:index' %}"><img src="{% static logo.address %}" alt="{{ logo.explain }}" id = 'logo1_img' /></a>
                     </div>
-
-                    <!--
-                    <div class="search">
-                        <form action="" method="post">
-                            <input type="text" value="Search." onblur="if(this.value=='') this.value='Search.';" onfocus="if(this.value=='Search.') this.value='';" class="ft"/>
-                            <input type="submit" value="" class="fs">
-                        </form>
-                    </div>
-                    -->
 
                     <!-- Nav -->
                     <nav id="nav">
@@ -187,30 +178,23 @@
             <div class="container">
                 <div class="main-slider">
                 	<div class="badg">
-                    	<p><a href="#">Popular.</a></p>
+                    	<p><a href="#">推荐</a></p>
                     </div>
                 	<div class="flexslider">
                         <ul class="slides">
-                            <li>
-                                <img src="{% static 'img/flexslider/1.png' %}" alt="MyPassion" />
-                                <p class="flex-caption"><a href="#">Google wants more women in tech.</a> Donec bibendum dolor at ante. Proin neque dui, pre tium quis fringilla ut,  sodales sed. </p>
-                            </li>
-                            <li>
-                                <img src="{% static 'img/flexslider/3.png' %}" alt="MyPassion" />
-                                <p class="flex-caption"><a href="#">Small Businesses Surge against all expectations.</a> Donec bibendum dolor at ante. Proin neque dui, pre tium quis fringilla ut,  sodales sed. </p>
-                            </li>
-                            <li>
-                                <img src="{% static 'img/flexslider/5.png' %}" alt="MyPassion" />
-                                <p class="flex-caption"><a href="#">Drones: Future of disaster response?</a> Donec bibendum dolor at ante. Proin neque dui, pre tium quis fringilla ut,  sodales sed. </p>
-                            </li>
-                            <li>
-                                <img src="{% static 'img/flexslider/4.png' %}" alt="MyPassion" />
-                                <p class="flex-caption"><a href="#">Hollywood cowboys' retreat. </a> Donec bibendum dolor at ante. Proin neque dui, pre tium quis fringilla ut,  sodales sed. </p>
-                            </li>
-                            <li>
-                                <img src="{% static 'img/flexslider/2.png' %}" alt="MyPassion" />
-                                <p class="flex-caption"><a href="#">Stress may cause cravings.</a> Donec bibendum dolor at ante. Proin neque dui, pre tium quis fringilla ut,  sodales sed. </p>
-                            </li>
+                            {% for MyPassion in nominate %}
+                                <li>
+                                    <img src="{% static MyPassion.address %}" alt="{{ MyPassion.explain }}" />
+                                    <p class="flex-caption">
+                                        {% if MyPassion.course_id %}
+                                            <a href="{% url 'Course:StartPage' MyPassion.course_id %}">{{ MyPassion.title }}</a> {{ MyPassion.content }}
+                                        {% endif %}
+                                        {% if not MyPassion.course_id %}
+                                            <a href="#">{{ MyPassion.title }}</a> {{ MyPassion.content }}
+                                        {% endif %}
+                                    </p>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -837,6 +821,7 @@
 <!--
 {#<script type="text/javascript" src="{% static 'js/copyright.js' %}"></script>#}
 -->
+<script type="text/javascript" src="{% static 'js/proving.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/login.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/criticism.js' %}"></script>
 

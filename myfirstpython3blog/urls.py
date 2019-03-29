@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'', include("blogproject.urls")),
     url(r'', include("comments.urls")),
     url(r'',include("Course.urls")),
+    # url(r'', include('img.urls')),
     url(r'^all/rss/$', AllPostsRssFeed(), name='rss'),
     url(r'search/', include('haystack.urls')),
 ]

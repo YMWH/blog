@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import Course_Post
+from .models import Course_Post, Course_title
 import time
 import markdown
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 from comments.models import *
+from img.models import courseImg
 # Create your views here.
 
 def index(request):
@@ -14,14 +15,14 @@ def index(request):
     newYear = time.strftime('%Y', time.localtime(time.time()))
     CourseRoot = 'courseBase.html'
     userName = ''
-    if not userData:
+    ico = courseImg.objects.filter(name='ico')[0]
+    logo = courseImg.objects.filter(name='courseLogo')[0]
+    nominate = courseImg.objects.filter(name="推荐")
+    if not judgelogin(request):
         return render(request, 'Course/index.html', locals())
     else:
-        if userData[0].state:
-            userName = userData[0].name
-            return render(request, 'Course/index.html', locals())
-        else:
-            return render(request, 'Course/index.html', locals())
+        userName = request.COOKIES.get('username')
+        return render(request, 'Course/index.html', locals())
 def StartPage(request, pk):
     userName = ''
     post_list = Course_Post.objects.filter(course_id=pk).order_by('serial')
@@ -33,14 +34,11 @@ def StartPage(request, pk):
         chapterDown = post_list[1].id
     else:
         chapterDown = 0
-    if not userData:
+    if not judgelogin(request):
         return render(request, 'Course/Course_details.html', locals())
     else:
-        if userData[0].state:
-            userName = userData[0].name
-            return render(request, 'Course/Course_details.html', locals())
-        else:
-            return render(request, 'Course/Course_details.html', locals())
+        userName = request.COOKIES.get('username')
+        return render(request, 'Course/Course_details.html', locals())
 def Course_details(request, pk):
     userName = ''
     allList = []
@@ -67,14 +65,12 @@ def Course_details(request, pk):
         post_id = post_value.course_id
         post_list = Course_Post.objects.filter(course_id=post_id).order_by('serial')
         post, state, newYear, userData, commentAllData = public(request, post_value)
-        if not userData:
+
+        if not judgelogin(request):
             return render(request, 'Course/Course_details.html', locals())
         else:
-            if userData[0].state:
-                userName = userData[0].name
-                return render(request, 'Course/Course_details.html', locals())
-            else:
-                return render(request, 'Course/Course_details.html', locals())
+            userName = request.COOKIES.get('username')
+            return render(request, 'Course/Course_details.html', locals())
     except:
         pass
 
@@ -97,3 +93,13 @@ def public(request, post_value):
         return post_value, 0, newYear, userData, commentAllData
     else:
         return post_value, 1, newYear, userData, commentAllData
+
+def judgelogin(request):
+    user_ip = request.environ["REMOTE_ADDR"]
+    if request.COOKIES.get('login') != "True":
+    # if request.session.get('is_login') != True:
+        request.session['redrect'] = True
+        CommentUsers.objects.filter(userIp=user_ip).update(state=False)
+        return False
+    return True
+

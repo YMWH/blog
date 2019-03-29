@@ -12,10 +12,10 @@ from datetime import datetime
 def criticism(request):
     if request.is_ajax() and request.method == 'POST':
         textAll = request.POST
-        usertext = textAll['catalog']
-        website = request.environ['HTTP_REFERER']
-        weburl = request.environ['HTTP_ORIGIN']
-        user_ip = request.environ["REMOTE_ADDR"]
+        usertext = textAll['catalog']#获取评论内容
+        website = request.environ['HTTP_REFERER']#获取完整的地址
+        weburl = request.environ['HTTP_ORIGIN']#获取http://xxxxxx
+        user_ip = request.environ["REMOTE_ADDR"]#获取网页ip
         webname = website[len(weburl)+1:]
         webClassify = webname.find("StartPage")
         userAllData = CommentUsers.objects.filter(userIp=user_ip)
@@ -52,16 +52,17 @@ def criticism(request):
 
 
 def cancel(request):
-    user_ip = request.environ["REMOTE_ADDR"]
-    userData = CommentUsers.objects.filter(userIp=user_ip)
-    if request.is_ajax() and request.method == 'POST':
-        name = request.POST.getlist('name')[0]
-        userName = CommentUsers.objects.filter(name=name)[0]
-        if userData:
-            if userName.userIp == userData[0].userIp:
-                CommentUsers.objects.filter(userIp=user_ip).update(state=False)
-                data = json.dumps([0])
-                return HttpResponse(data)
+    if judgelogin(request):
+        user_ip = request.environ["REMOTE_ADDR"]
+        userData = CommentUsers.objects.filter(userIp=user_ip)
+        if request.is_ajax() and request.method == 'POST':
+            name = request.POST.getlist('name')[0]
+            userName = CommentUsers.objects.filter(name=name)[0]
+            if userData:
+                if userName.userIp == userData[0].userIp:
+                    CommentUsers.objects.filter(userIp=user_ip).update(state=False)
+                    data = json.dumps([0])
+                    return HttpResponse(data)
 
 def register(request):
     # 注册数据格式：["register", "注册状态码", "邮箱状态码"]
@@ -92,6 +93,15 @@ def register(request):
             data = json.dumps(registerData)#"账号已经存在，请重新注册"
             return HttpResponse(data)
 
+def judgelogin(request):
+    if request.COOKIES.get('login') != "True":
+    # if request.session.get('is_login') != True:
+        request.session['redrect'] = True
+        return False
+    return True
+
+
+
 def login(request):
     # 返回数据为：["login", "反馈登录状态"，"登录状态码"，"用户名"];
     # login:标记该数据为登录数据
@@ -112,7 +122,6 @@ def login(request):
         password = request.POST.getlist('password')[0]
         allData = CommentUsers.objects.all().filter(name=name)
         user_ip = request.environ["REMOTE_ADDR"]
-        # CommentUsers.objects.filter(id=allData[0].id).update(state=False)
         if not allData:
             loginData = ["login", 0, 0, 0]
             data = json.dumps(loginData) #"该账户不存在，请先注册"
@@ -126,14 +135,27 @@ def login(request):
                     return HttpResponse(data)
                 else:
                     CommentUsers.objects.filter(id=allData.id).update(state=True, userIp=user_ip)
+                    allData = CommentUsers.objects.all().filter(name=name)[0]
                     # CommentUsers.objects.filter(id=allData.id).update(userIp=user_ip)
+                    # session
+                    # request.session["is_login"] = True
+                    # request.session["user_id"] = allData.id
+                    # request.session["user_name"] = allData.name
+
+                    # COOKIE
                     loginData = ["login", 1, allData.state, allData.name]
-                    data = json.dumps(loginData)#"登录成功"
-                    return HttpResponse(data)
+                    data = json.dumps(loginData)  # "登录成功"
+
+                    response = HttpResponse(data)
+                    response.set_cookie('login', True, max_age=1800)
+                    response.set_cookie('username', allData.name)
+                    return response
             else:
                 loginData = ["login", -1, allData.state, allData.name]
                 data = json.dumps(loginData)#"密码错误"
                 return HttpResponse(data)
+
+
 def post_comment(request, pk):
     post = get_object_or_404(Post, pk = pk)
     if request.method == 'POST':
@@ -164,4 +186,3 @@ def post_comment(request, pk):
             }
             return render(request, 'blog/detail.html', context=context)
     return redirect(post)
-
