@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2f92e40-daf2-4977-bd37-9eed65545eb1" name="Default Changelist" comment="" />
+    <list default="true" id="d2f92e40-daf2-4977-bd37-9eed65545eb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Course/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myfirstpython3blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstpython3blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/criticism.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/criticism.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Course/Course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Course/Course_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/courseBase.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courseBase.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +25,7 @@
     <SUITE FILE_PATH="coverage/myfirstpython3blog$moon__1_.coverage" NAME="moon (1) Coverage Results" MODIFIED="1552499335732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myfirstpython3blog$models.coverage" NAME="models Coverage Results" MODIFIED="1551032739729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blogproject" />
     <SUITE FILE_PATH="coverage/myfirstpython3blog$Verification.coverage" NAME="Verification Coverage Results" MODIFIED="1553354980553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/verification" />
-    <SUITE FILE_PATH="coverage/myfirstpython3blog$.coverage" NAME=" Coverage Results" MODIFIED="1553852108052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/myfirstpython3blog$.coverage" NAME=" Coverage Results" MODIFIED="1554619644979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -73,55 +84,58 @@
     <session id="-513012749">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2929" />
-          <entry key="html" value="4460" />
-          <entry key="js" value="5461" />
-          <entry key="py" value="10022" />
+          <entry key="css" value="3057" />
+          <entry key="html" value="4922" />
+          <entry key="js" value="7464" />
+          <entry key="py" value="10545" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2929" />
-          <entry key="HTML" value="4460" />
-          <entry key="JavaScript" value="5461" />
-          <entry key="Python" value="10022" />
+          <entry key="CSS" value="3057" />
+          <entry key="HTML" value="4922" />
+          <entry key="JavaScript" value="7464" />
+          <entry key="Python" value="10545" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="51" />
-          <entry key="html" value="65" />
+          <entry key="css" value="58" />
+          <entry key="html" value="66" />
           <entry key="ico" value="1" />
-          <entry key="js" value="44" />
+          <entry key="js" value="46" />
           <entry key="php" value="1" />
           <entry key="png" value="4" />
-          <entry key="py" value="326" />
+          <entry key="py" value="338" />
           <entry key="pyi" value="1" />
+          <entry key="ts" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="51" />
-          <entry key="HTML" value="65" />
+          <entry key="CSS" value="58" />
+          <entry key="HTML" value="66" />
           <entry key="Image" value="5" />
-          <entry key="JavaScript" value="44" />
+          <entry key="JavaScript" value="46" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="326" />
+          <entry key="Python" value="338" />
           <entry key="PythonStub" value="1" />
+          <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -131,59 +145,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
-              <folding>
-                <element signature="n#!!block;n#userCancel#0" />
-                <element signature="n#!!block;n#submitregister#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/virtual/Lib/site-packages/fabric/operations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="969" column="4" selection-start-line="969" selection-start-column="4" selection-end-line="969" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myfirstpython3blog/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="3057">
+              <caret line="259" column="26" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fabfile.py">
+        <entry file="file://$PROJECT_DIR$/static/js/criticism.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/python3Blog/Lib/site-packages/fabric/operations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="998" column="17" lean-forward="true" selection-start-line="992" selection-start-column="4" selection-end-line="998" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comments/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="145" column="72" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="72" />
+            <state relative-caret-position="88">
+              <caret line="130" column="473" selection-start-line="130" selection-start-column="473" selection-end-line="130" selection-end-column="473" />
               <folding>
-                <element signature="e#2823#3989#0" />
+                <element signature="e#1596#1615#0" />
+                <element signature="e#2102#2132#0" />
               </folding>
             </state>
           </provider>
@@ -192,46 +167,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4440">
-              <caret line="148" column="78" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="78" />
+            <state relative-caret-position="76">
+              <caret line="78" column="39" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="39" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#!!top" />
+                <element signature="e#7403#7407#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
+        <entry file="file://$PROJECT_DIR$/comments/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3750">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="46" />
+            <state relative-caret-position="155">
+              <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comments/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <element signature="e#7726#9933#0#HTML" />
+                <element signature="e#6916#8096#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/models.py">
+        <entry file="file://$PROJECT_DIR$/Course/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Course/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -242,25 +215,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>上一页</find>
-      <find>Course_Post</find>
-      <find>CommentUsers</find>
-      <find>social</find>
-      <find>首页</find>
-      <find>logo</find>
-      <find>注销</find>
-      <find>cancel</find>
-      <find>response\.set_cookie\(\'login\'\, \&quot;True\&quot;\)\n                    return response</find>
-      <find>Discuss</find>
-      <find>loginPrompt</find>
       <find>discuss</find>
       <find>document</find>
       <find>date</find>
@@ -280,6 +242,17 @@
       <find>cookie</find>
       <find>Course</find>
       <find>judgelogin</find>
+      <find>newYear</find>
+      <find>userData</find>
+      <find>发表</find>
+      <find>commentFun</find>
+      <find>parentId</find>
+      <find>Child</find>
+      <find>text</find>
+      <find>userReply</find>
+      <find>parent</find>
+      <find>parentLi</find>
+      <find>childReply</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -291,8 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/css/logo.css" />
-        <option value="$PROJECT_DIR$/static/js/copyright.js" />
         <option value="$PROJECT_DIR$/static/css/record.css" />
         <option value="$PROJECT_DIR$/templates/Course/single.html" />
         <option value="$PROJECT_DIR$/templates/blog/index.html" />
@@ -318,30 +289,32 @@
         <option value="$PROJECT_DIR$/moon.py" />
         <option value="$PROJECT_DIR$/static/css/chapter.css" />
         <option value="$PROJECT_DIR$/static/js/comment.js" />
-        <option value="$PROJECT_DIR$/comments/models.py" />
         <option value="$PROJECT_DIR$/Course/feeds.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/verification/__init__.py" />
         <option value="$PROJECT_DIR$/Course/urls.py" />
-        <option value="$PROJECT_DIR$/comments/urls.py" />
         <option value="$PROJECT_DIR$/verification/Verification.py" />
-        <option value="$PROJECT_DIR$/static/js/criticism.js" />
         <option value="$PROJECT_DIR$/static/js/xxxxx.js" />
         <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/img/views.py" />
         <option value="$PROJECT_DIR$/img/urls.py" />
         <option value="$PROJECT_DIR$/myfirstpython3blog/urls.py" />
-        <option value="$PROJECT_DIR$/templates/Course/Course_details.html" />
         <option value="$PROJECT_DIR$/static/js/proving.js" />
-        <option value="$PROJECT_DIR$/static/js/login.js" />
         <option value="$PROJECT_DIR$/img/admin.py" />
         <option value="$PROJECT_DIR$/img/migrations/__init__.py" />
         <option value="$PROJECT_DIR$/img/models.py" />
-        <option value="$PROJECT_DIR$/templates/courseBase.html" />
-        <option value="$PROJECT_DIR$/Course/views.py" />
-        <option value="$PROJECT_DIR$/comments/views.py" />
         <option value="$PROJECT_DIR$/fabfile.py" />
         <option value="$PROJECT_DIR$/myfirstpython3blog/settings.py" />
+        <option value="$PROJECT_DIR$/Course/views.py" />
+        <option value="$PROJECT_DIR$/comments/models.py" />
+        <option value="$PROJECT_DIR$/static/js/login.js" />
+        <option value="$PROJECT_DIR$/comments/views.py" />
+        <option value="$PROJECT_DIR$/static/css/discuss.py" />
+        <option value="$PROJECT_DIR$/templates/courseBase.html" />
+        <option value="$PROJECT_DIR$/static/css/discuss.css" />
+        <option value="$PROJECT_DIR$/comments/urls.py" />
+        <option value="$PROJECT_DIR$/templates/Course/Course_details.html" />
+        <option value="$PROJECT_DIR$/static/js/criticism.js" />
       </list>
     </option>
   </component>
@@ -351,7 +324,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1389" />
@@ -370,6 +343,44 @@
               <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="comments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myfirstpython3blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstpython3blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Course" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -381,7 +392,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="Code&#9;null&#9;null&#10;Code()&#9;null&#9;null&#10;toc&#9;null&#9;null&#10;commentusers&#9;null&#9;null&#10;BASE_DIR&#9;null&#9;null&#10;delete&#9;null&#9;null&#10;_default_manager&#9;null&#9;null&#10;main&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/pythonvirtual" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../备份/myfirstpython3blog" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -576,13 +587,13 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7877907" visible="true" weight="0.19159256" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7877907" visible="true" weight="0.19805983" />
       <window_info id="Structure" order="1" sideWeight="0.2122093" side_tool="true" weight="0.18189168" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.386121" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36476868" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2758007" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32740214" />
@@ -590,7 +601,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26334518" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30782917" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32740214" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -768,433 +779,543 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comments/views.py</url>
-          <line>150</line>
+          <line>180</line>
           <option name="timeStamp" value="857" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comments/views.py</url>
-          <line>149</line>
+          <line>179</line>
           <option name="timeStamp" value="858" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comments/views.py</url>
-          <line>148</line>
+          <line>178</line>
           <option name="timeStamp" value="859" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comments/views.py</url>
-          <line>146</line>
+          <line>176</line>
           <option name="timeStamp" value="860" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/comments/views.py</url>
-          <line>145</line>
+          <line>175</line>
           <option name="timeStamp" value="861" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="877" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="878" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="879" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="881" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="882" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="883" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>102</line>
-          <option name="timeStamp" value="884" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>103</line>
-          <option name="timeStamp" value="885" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="887" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="888" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="889" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="890" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="891" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="892" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="893" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="894" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="895" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="896" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="897" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="898" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="899" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="900" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="901" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="902" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="903" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="904" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="905" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="906" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="907" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="908" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="909" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="910" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="911" />
+          <line>30</line>
+          <option name="timeStamp" value="977" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
           <line>66</line>
-          <option name="timeStamp" value="912" />
+          <option name="timeStamp" value="978" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="913" />
+          <line>102</line>
+          <option name="timeStamp" value="979" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="914" />
+          <line>105</line>
+          <option name="timeStamp" value="980" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="915" />
+          <line>106</line>
+          <option name="timeStamp" value="981" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="921" />
+          <line>107</line>
+          <option name="timeStamp" value="982" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="922" />
+          <line>108</line>
+          <option name="timeStamp" value="983" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="923" />
+          <line>110</line>
+          <option name="timeStamp" value="987" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="924" />
+          <line>112</line>
+          <option name="timeStamp" value="988" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="925" />
+          <line>113</line>
+          <option name="timeStamp" value="989" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="926" />
+          <line>109</line>
+          <option name="timeStamp" value="990" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="927" />
+          <line>111</line>
+          <option name="timeStamp" value="991" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="928" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="992" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="929" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="993" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="930" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="994" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="931" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="995" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="932" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="996" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>88</line>
-          <option name="timeStamp" value="933" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="997" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="934" />
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="999" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="1000" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="1001" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="1002" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="1003" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1004" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="1005" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="1006" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="1007" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="1008" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="1009" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="1010" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="1011" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="1012" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="1013" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="1014" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="1015" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="1016" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="1017" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="1018" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="1019" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="1020" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="1021" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="1022" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="1023" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="1024" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="1025" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="1026" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="1027" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="1028" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="1029" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
           <line>90</line>
-          <option name="timeStamp" value="935" />
+          <option name="timeStamp" value="1042" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>91</line>
-          <option name="timeStamp" value="936" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="937" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="938" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>94</line>
-          <option name="timeStamp" value="939" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="943" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="944" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="945" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="949" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="953" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="954" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="955" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="956" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="957" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="958" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="959" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="960" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="961" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="962" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="963" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="968" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="969" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="970" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="971" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="972" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="973" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="974" />
+          <line>100</line>
+          <option name="timeStamp" value="1043" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
           <line>101</line>
-          <option name="timeStamp" value="975" />
+          <option name="timeStamp" value="1044" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Course/views.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="976" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/Course/Course_details.html</url>
           <line>89</line>
-          <option name="timeStamp" value="724" />
+          <option name="timeStamp" value="1045" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Course/views.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="1047" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Course/views.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="1048" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Course/views.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="1049" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Course/views.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="1050" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Course/views.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="1051" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="1052" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1053" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1054" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="1055" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1056" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1057" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="1058" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="1059" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="1060" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1061" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="1062" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="1063" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="1064" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1065" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="1066" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="1067" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="1068" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="1069" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="1070" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="1071" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="1072" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="1073" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="1074" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="1075" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="1076" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="1077" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="1078" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="1079" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="1080" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>149</line>
+          <option name="timeStamp" value="1081" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="1082" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="1083" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>152</line>
+          <option name="timeStamp" value="1084" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>153</line>
+          <option name="timeStamp" value="1085" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="1086" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>162</line>
+          <option name="timeStamp" value="1087" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>164</line>
+          <option name="timeStamp" value="1088" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>165</line>
+          <option name="timeStamp" value="1089" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="1090" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>167</line>
+          <option name="timeStamp" value="1091" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="1092" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="1093" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="1094" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="1095" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/comments/views.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="1096" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1205,43 +1326,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/Catalog.css" />
-    <entry file="file://$PROJECT_DIR$/Course/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31094">
-          <caret line="177" column="12" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/static/css/catalog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogproject/static/blog/css/loginStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/cover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moon.py" />
-    <entry file="file://$PROJECT_DIR$/static/css/chapter.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/python3Blog/Lib/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
@@ -1305,9 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/verification/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1327,13 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/criticism.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -1358,31 +1432,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="104" column="19" lean-forward="true" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/proving.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
@@ -1410,36 +1463,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Course/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1553852076312" expanded="true" signature="918:919" ph="..." />
-            <marker date="1553852076312" expanded="true" signature="1040:1041" ph="..." />
-            <marker date="1553852076312" expanded="true" signature="1040:1045" ph="..." />
-            <marker date="1553852076312" expanded="true" signature="1603:1608" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://E:/python3Blog/Lib/site-packages/invoke/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1448,49 +1473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/virtual/Lib/site-packages/invoke/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2880">
           <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comments/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="145" column="72" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="72" />
-          <folding>
-            <element signature="e#2823#3989#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="148" column="78" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="78" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3750">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="46" />
-          <folding>
-            <element signature="e#7726#9933#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1511,24 +1497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/virtual/Lib/site-packages/fabric/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="969" column="4" selection-start-line="969" selection-start-column="4" selection-end-line="969" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!block;n#userCancel#0" />
-            <element signature="n#!!block;n#submitregister#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/virtual/Lib/site-packages/fabric/operations.py" />
     <entry file="file://E:/python3Blog/Lib/site-packages/fabric/operations.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1536,27 +1505,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile.py" />
     <entry file="file://$PROJECT_DIR$/../fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myfirstpython3blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fabfile.py">
+    <entry file="file://$PROJECT_DIR$/Course/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="270">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/proving.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myfirstpython3blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/cover.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/record.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/chapter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/discuss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="607" column="1" selection-start-line="607" selection-start-column="1" selection-end-line="607" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3057">
+          <caret line="259" column="26" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/courseBase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/discuss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="16925" column="12" selection-start-line="16925" selection-start-column="12" selection-end-line="16925" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Course/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comments/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#6916#8096#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Course/Course_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="78" column="39" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="e#7403#7407#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/criticism.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="130" column="473" selection-start-line="130" selection-start-column="473" selection-end-line="130" selection-end-column="473" />
+          <folding>
+            <element signature="e#1596#1615#0" />
+            <element signature="e#2102#2132#0" />
+          </folding>
         </state>
       </provider>
     </entry>

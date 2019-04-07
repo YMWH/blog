@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^comments/register/$', views.register, name = "register"),
     url(r'^comments/cancel/$', views.cancel, name = "cancel"),
     url(r'^comments/course/criticism/$', views.criticism, name = "criticism"),
+    url(r'^comments/course/criticism/firstChild/$', views.criticism, name = "criticism"),
+    # url(r'^comments/course/criticism/secondChild/$', views.criticism, name = "criticism"),
 ]

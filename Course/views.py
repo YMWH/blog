@@ -10,8 +10,8 @@ from img.models import courseImg
 
 def index(request):
     # 获取远程连接的ip
-    user_ip = request.environ["REMOTE_ADDR"]
-    userData = CommentUsers.objects.filter(userIp=user_ip)
+    # user_ip = request.environ["REMOTE_ADDR"]
+    # userData = CommentUsers.objects.filter(userIp=user_ip)
     newYear = time.strftime('%Y', time.localtime(time.time()))
     CourseRoot = 'courseBase.html'
     userName = ''
@@ -28,7 +28,7 @@ def StartPage(request, pk):
     post_list = Course_Post.objects.filter(course_id=pk).order_by('serial')
     post_value = post_list[0]
     CourseRoot = 'courseBase.html'
-    post, state, newYear, userData, commentAllData = public(request,post_value)
+    post, state, newYear, commentParentList, commentChildList, userData = public(request,post_value)
     chapterUp = 0
     if len(post_list)>1:
         chapterDown = post_list[1].id
@@ -64,7 +64,7 @@ def Course_details(request, pk):
         post_value = post_details[0]
         post_id = post_value.course_id
         post_list = Course_Post.objects.filter(course_id=post_id).order_by('serial')
-        post, state, newYear, userData, commentAllData = public(request, post_value)
+        post, state, newYear, commentParentList, commentChildList, userData = public(request, post_value)
 
         if not judgelogin(request):
             return render(request, 'Course/Course_details.html', locals())
@@ -75,6 +75,8 @@ def Course_details(request, pk):
         pass
 
 def public(request, post_value):
+    commentParentList = []
+    commentChildList = []
     newYear = time.strftime('%Y',time.localtime(time.time()))
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
@@ -86,13 +88,21 @@ def public(request, post_value):
     post_value.toc = md.toc
     testing = post_value.toc.find("li")
     # 获取远程连接的ip
-    user_ip = request.environ["REMOTE_ADDR"]
-    userData = CommentUsers.objects.filter(userIp=user_ip)
+    # user_ip = request.environ["REMOTE_ADDR"]
+    # userData = CommentUsers.objects.filter(userIp=user_ip)
+    userData = CommentUsers.objects.all()
     commentAllData = CommentCourse.objects.filter(coursePost_id=post_value.id).order_by("-created_time")
+    for commentData in commentAllData:
+        if commentData.floor == 0:
+            commentParentList.append(commentData)
+        else:
+            commentChildList.append(commentData)
     if testing == -1:
-        return post_value, 0, newYear, userData, commentAllData
+        state = 0
     else:
-        return post_value, 1, newYear, userData, commentAllData
+        state = 1
+    return post_value, state, newYear, commentParentList, commentChildList, userData
+
 
 def judgelogin(request):
     user_ip = request.environ["REMOTE_ADDR"]

@@ -31,7 +31,7 @@ class Comment(models.Model):
     #     created_time:评论时间
     #     floor:评论楼层，总共有三级评论，一级为初始楼层
     #     belong:从二级开始，由该字段决定回复属于的初始评论
-    #     post:如果字段值不为0，那么该条评论属于博客页面
+    #     post:该条评论属于的文章
     #     coursePost:如果字段值不为0，那么该条评论属于教程页面
     #     users:记录该条评论属于哪个用户
     # '''
@@ -44,12 +44,14 @@ class Comment(models.Model):
     users = models.ForeignKey(CommentUsers,default=50)
     def __str__(self):
         return self.text[:20]
+
 class CommentCourse(models.Model):
     # '''
     #     text:评论内容
     #     created_time:评论时间
-    #     floor:评论楼层，总共有三级评论，一级为初始楼层
-    #     belong:从二级开始，由该字段决定回复属于的初始评论
+    #     floor:评论楼层，总共有三级评论，一级为初始楼层,0,1,2
+    #     belong:从二级开始，由该字段决定回复属于的初始评论,值为被评论的评论的id
+    #     Native:记录楼主id
     #     post:如果字段值不为0，那么该条评论属于博客页面
     #     coursePost:如果字段值不为0，那么该条评论属于教程页面
     #     users:记录该条评论属于哪个用户
@@ -58,6 +60,7 @@ class CommentCourse(models.Model):
     created_time = models.DateTimeField(auto_now_add=True)
     floor = models.PositiveIntegerField(default=0)
     belong = models.PositiveIntegerField(default=0)
+    Native = models.PositiveIntegerField(default=0)
     coursePost = models.ForeignKey('Course.Course_Post')
     users = models.ForeignKey(CommentUsers, default=50)
     def __str__(self):

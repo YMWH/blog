@@ -201,9 +201,6 @@ function submitregister() {
     return false;
 }
 
-
-
-
 function submitlogin() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function () {

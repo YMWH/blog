@@ -9,10 +9,24 @@ from datetime import datetime
 
 # Create your views here.
 
+# 评论
 def criticism(request):
     if request.is_ajax() and request.method == 'POST':
         textAll = request.POST
+
         usertext = textAll['catalog']#获取评论内容
+        userFloor = int(textAll['floor'])#获取楼层值
+        userParentId = int(textAll['parentId'])#获取楼主id
+        userChildId = int(textAll['childId'])#获取楼层回复的id
+
+        if userFloor == 0:
+            userParentId = 0
+            userChildId = 0
+        elif userFloor == 1:
+            userChildId = userParentId
+        elif userFloor == 2:
+            pass
+
         website = request.environ['HTTP_REFERER']#获取完整的地址
         weburl = request.environ['HTTP_ORIGIN']#获取http://xxxxxx
         user_ip = request.environ["REMOTE_ADDR"]#获取网页ip
@@ -38,7 +52,7 @@ def criticism(request):
                 webId = webIdData[0:]
             article = webId
             post = get_object_or_404(Course_Post, pk = article)
-        comment = CommentCourse(text=usertext)
+        comment = CommentCourse(text=usertext, floor=userFloor, belong=userParentId, Native=userChildId)
         comment.coursePost = post
         comment.users = userData
         comment.save()
@@ -46,11 +60,12 @@ def criticism(request):
         name = commentData.users.name
         body = commentData.text
         date = commentData.created_time.strftime("%Y-%m-%d %H:%M:%S")
-        dataList = [name, body, date]
+        newId = commentData.id
+        dataList = [name, body, date, newId]
         data = json.dumps(dataList)
         return HttpResponse(data)
 
-
+# 注销
 def cancel(request):
     if judgelogin(request):
         user_ip = request.environ["REMOTE_ADDR"]
@@ -64,6 +79,7 @@ def cancel(request):
                     data = json.dumps([0])
                     return HttpResponse(data)
 
+# 注册
 def register(request):
     # 注册数据格式：["register", "注册状态码", "邮箱状态码"]
     # register:标记该数据为注册反馈数据
@@ -93,6 +109,7 @@ def register(request):
             data = json.dumps(registerData)#"账号已经存在，请重新注册"
             return HttpResponse(data)
 
+# cookie
 def judgelogin(request):
     if request.COOKIES.get('login') != "True":
     # if request.session.get('is_login') != True:
@@ -100,8 +117,7 @@ def judgelogin(request):
         return False
     return True
 
-
-
+# 登录
 def login(request):
     # 返回数据为：["login", "反馈登录状态"，"登录状态码"，"用户名"];
     # login:标记该数据为登录数据
@@ -154,7 +170,6 @@ def login(request):
                 loginData = ["login", -1, allData.state, allData.name]
                 data = json.dumps(loginData)#"密码错误"
                 return HttpResponse(data)
-
 
 def post_comment(request, pk):
     post = get_object_or_404(Post, pk = pk)
