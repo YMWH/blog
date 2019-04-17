@@ -8,11 +8,14 @@ var userReply = document.querySelectorAll('.childReply');
 var allReply = document.querySelectorAll('.parentReply');
 var userChildren = document.querySelectorAll('.children');
 var goBack = document.querySelector('.backAll');
+var userName = document.querySelector('.onLine');
 var parentId = 0;
 var childId = 0;
 var floor = 0;
 var commentsRoute = '/comments/course/criticism/';
 var who = null;
+
+
 parentTesting();
 
 if(goBack){
@@ -116,7 +119,7 @@ function firstChildFun(){
     xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.setRequestHeader( 'X-CSRFToken',document.getElementsByName("csrfmiddlewaretoken")[0].value);
 
-    data = "floor=" + floor + "&parentId=" + parentId + "&childId=" + childId + "&catalog=" + answer.value;
+    data = "floor=" + floor + "&parentId=" + parentId + "&childId=" + childId + "&catalog=" + answer.value + "&username=" + userName.innerHTML;
     xmlhttp.send(data);
     return false;
 }
@@ -140,7 +143,7 @@ function usercCriticism() {
     xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.setRequestHeader( 'X-CSRFToken',document.getElementsByName("csrfmiddlewaretoken")[0].value);
 
-    data = "floor=" + floor + "&parentId=" + parentId + "&childId=" + childId + "&catalog=" + text.value;
+    data = "floor=" + floor + "&parentId=" + parentId + "&childId=" + childId + "&catalog=" + text.value + "&username=" + userName.innerHTML;
     xmlhttp.send(data);
     return false;
 }

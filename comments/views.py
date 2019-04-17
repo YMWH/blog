@@ -18,6 +18,7 @@ def criticism(request):
         userFloor = int(textAll['floor'])#获取楼层值
         userParentId = int(textAll['parentId'])#获取楼主id
         userChildId = int(textAll['childId'])#获取楼层回复的id
+        userName = textAll["username"]#获取评论的人
 
         if userFloor == 0:
             userParentId = 0
@@ -32,7 +33,7 @@ def criticism(request):
         user_ip = request.environ["REMOTE_ADDR"]#获取网页ip
         webname = website[len(weburl)+1:]
         webClassify = webname.find("StartPage")
-        userAllData = CommentUsers.objects.filter(userIp=user_ip)
+        userAllData = CommentUsers.objects.filter(name=userName)
         userData = get_object_or_404(CommentUsers, pk = userAllData[0].id)
         post = ''
         article = ''
@@ -77,7 +78,10 @@ def cancel(request):
                 if userName.userIp == userData[0].userIp:
                     CommentUsers.objects.filter(userIp=user_ip).update(state=False)
                     data = json.dumps([0])
-                    return HttpResponse(data)
+
+                    response = HttpResponse(data)
+                    response.set_cookie('login', False)
+                    return response
 
 # 注册
 def register(request):

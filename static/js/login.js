@@ -21,10 +21,16 @@ var loginA = login.querySelector('a');
 var cancel = login.querySelector('.cancel');
 var overplusDate = document.querySelector('.overplus');
 var verificationText = document.querySelector('.verificationCode');
+var userReply = document.querySelectorAll('.childReply');
+var allReply = document.querySelectorAll('.parentReply');
 var route = '/comments/login/';
 var date = 0;
 var newDate = new Date();
 var verifyCode = '';
+var parentId = 0;
+var childId = 0;
+var floor = 0;
+var who = null;
 
 
 
@@ -80,6 +86,7 @@ function funCancel() {
 
 function funLogin() {
     try{
+
         hideDiscuss.style.display = "none";
         for(var i = 0; i < Discuss.length; i++){
             Discuss[i].style.display = "block"
@@ -116,6 +123,20 @@ function userCancel(nodeFirst, i) {
             // var redata = JSON.parse(xmlhttp.responseText);
             var respone = eval('(' + xmlhttp.responseText + ')');
             if(respone[0] === 0){
+                console.log(onLine.innerHTML);
+                onLine.innerHTML = "";
+                console.log(onLine.innerHTML);
+                parentId = 0;
+                childId = 0;
+                floor = 0;
+                who = null;
+                userReply[0].innerHTML = '<h5 class="line"><span>他在听着呢</span></h5>';
+                for(var i = 0; i < userReply.length; i++){
+                    userReply[i].style.display = "none";
+                }
+                for(var a = 0; a < allReply.length; a++){
+                    allReply[a].style.display = "block";
+                }
                 login.innerHTML = '<a href="#" class="offLine">登录</a>';
                 funCancel()
             }
@@ -134,7 +155,6 @@ function userCancel(nodeFirst, i) {
     }
     data = "name=" + userName;
     xmlhttp.send(data);
-
     return false;
 }
 
@@ -242,6 +262,12 @@ function submitlogin() {
                                 }
                                 finally {
                                     login.innerHTML = '<a href="#" class="onLine">' + respone[3] + '</a> <a href="#" class="cancel">注销</a>';
+                                    console.log(typeof respone[3]);
+                                    console.log(onLine ===null);
+                                    if(onLine !== null){
+                                        onLine.innerHTML = respone[3];
+                                    }
+
                                 }
                             }
                         }
